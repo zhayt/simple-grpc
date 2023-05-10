@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package student_v1;
+
+option go_package = "github.com/zhayt/simple-grpc/pb/student_v1";
+
+message Student {
+  string id = 1;
+  string name = 2;
+  string email = 3;
+  string password = 4;
+}

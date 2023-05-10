@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package student_v1;
+
+option go_package = "github.com/zhayt/simple-grpc/pb/student_v1";
+
+import "student_message.proto";
+
+message CreateStudentRequest {
+  Student student = 1;
+}
+
+message CreateStudentResponse {
+  string id = 1;
+}
+
+service StudentService {
+  rpc CreateStudent(CreateStudentRequest) returns (CreateStudentResponse) {}
+}
