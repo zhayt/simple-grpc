@@ -41,7 +41,7 @@ Saves a new student to the MongoDB database.
 |------------| --- |-----------------------------------------------|
 | `name`     | string | Name of the student                           |
 | `email`    | string | Email address of the student                  |
-| `degree`   | string | Student Password |
+| `password`   | string | Student Password |
 
 #### Response
 
